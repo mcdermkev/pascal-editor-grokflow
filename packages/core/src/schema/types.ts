@@ -5,6 +5,7 @@ import { DoorNode } from './nodes/door'
 import { GuideNode } from './nodes/guide'
 import { ItemNode } from './nodes/item'
 import { LevelNode } from './nodes/level'
+import { PipeNode } from './nodes/pipe'
 import { RoofNode } from './nodes/roof'
 import { RoofSegmentNode } from './nodes/roof-segment'
 import { ScanNode } from './nodes/scan'
@@ -27,6 +28,7 @@ export const AnyNode = z.discriminatedUnion('type', [
   RoofSegmentNode,
   ScanNode,
   GuideNode,
+  PipeNode,
   WindowNode,
   DoorNode,
 ])
