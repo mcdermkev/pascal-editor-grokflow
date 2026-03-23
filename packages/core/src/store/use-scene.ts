@@ -312,6 +312,12 @@ export function clearSceneHistory() {
   prevNodesSnapshot = null
 }
 
+// Dev-only: Expose store to window for console access
+if (import.meta.env.DEV) {
+  window.useScene = useScene;
+  console.log('Dev mode: window.useScene exposed for console testing');
+}
+
 // Subscribe to the temporal store (Undo/Redo events)
 useScene.temporal.subscribe((state) => {
   const currentPastLength = state.pastStates.length
