@@ -31,6 +31,7 @@ export { SlabNode } from './nodes/slab'
 export { WallNode } from './nodes/wall'
 export { WindowNode } from './nodes/window'
 export { ZoneNode } from './nodes/zone'
+export { PipeNode } from './nodes/pipe'
 export type { AnyNodeId, AnyNodeType } from './types'
 // Union types
 export { AnyNode } from './types'
